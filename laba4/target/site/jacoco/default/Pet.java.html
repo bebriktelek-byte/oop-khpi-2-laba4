@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Pet.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">oop-khpi-2-laba3</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Pet.java</span></div><h1>Pet.java</h1><pre class="source lang-java linenums">import java.util.Objects;
+
+public class Pet {
+    private final String id; // [cite: 14]
+    private String name; // [cite: 14]
+    private int age; // [cite: 14]
+    private boolean isHealthy; // [cite: 15]
+    private MedicalPassport medicalPassport; // Композиція
+
+<span class="fc" id="L10">    public Pet(String id, String name, int age, boolean isHealthy) {</span>
+<span class="fc" id="L11">        this.id = id; // [cite: 15]</span>
+<span class="fc" id="L12">        this.name = name; // [cite: 16]</span>
+<span class="fc" id="L13">        this.age = age; // [cite: 16]</span>
+<span class="fc" id="L14">        this.isHealthy = isHealthy; // [cite: 16]</span>
+<span class="fc" id="L15">        this.medicalPassport = new MedicalPassport(id); // Реалізація композиції</span>
+<span class="fc" id="L16">    }</span>
+
+    public Pet(String id, String name) {
+<span class="fc" id="L19">        this(id, name, 0, true); // [cite: 16]</span>
+<span class="fc" id="L20">    }</span>
+
+    public void checkHealth() {
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        if (isHealthy) { // [cite: 17]</span>
+<span class="fc" id="L24">            System.out.println(&quot;Тварина &quot; + name + &quot; здорова.&quot;); // [cite: 17]</span>
+        } else { // [cite: 18]
+<span class="fc" id="L26">            System.out.println(&quot;Тварині &quot; + name + &quot; потрібен огляд.&quot;); // [cite: 18]</span>
+        }
+<span class="fc" id="L28">    }</span>
+
+    @Override
+    public String toString() {
+<span class="fc" id="L32">        return &quot;Pet{id='&quot; + id + &quot;', name='&quot; + name + &quot;', age=&quot; + age +</span>
+                &quot;, healthy=&quot; + isHealthy + &quot;, &quot; + medicalPassport + &quot;}&quot;; // [cite: 19]
+    }
+
+    @Override
+    public boolean equals(Object o) {
+<span class="pc bpc" id="L38" title="1 of 2 branches missed.">        if (this == o) return true; // [cite: 20]</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        if (!(o instanceof Pet pet)) return false; // [cite: 21]</span>
+<span class="fc" id="L40">        return Objects.equals(id, pet.id); // [cite: 21]</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="fc" id="L45">        return Objects.hash(id); // [cite: 22]</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

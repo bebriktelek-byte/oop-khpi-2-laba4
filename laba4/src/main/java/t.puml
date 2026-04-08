@@ -1,0 +1,33 @@
+@startuml
+skinparam linetype ortho
+skinparam nodesep 100
+
+class Pet {
+  - id: String
+  - name: String
+  - age: int
+  - isHealthy: boolean
+  + Pet(String, String, int, boolean)
+  + Pet(String, String)
+  + checkHealth(): void
+  + toString(): String
+  + equals(Object): boolean
+  + hashCode(): int
+}
+
+class Dog {
+  - breed: String
+  + Dog(String, String, int, boolean, String)
+}
+
+class Adopter {
+  - adopterId: String
+  - fullName: String
+  + Adopter(String, String)
+  + toString(): String
+}
+
+Pet <|-- Dog : є підтипом
+
+Adopter "1" -left-> "0..N" Pet : доглядає/забирає
+@enduml

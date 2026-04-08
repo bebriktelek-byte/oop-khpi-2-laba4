@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-09T02:06:39 EEST" name="AnimalShelterSuite" finished-at="2026-04-09T02:06:39 EEST" duration-ms="101">
+    <groups>
+      <group name="negative">
+        <method signature="AppTest.testSickPetHealthCheck()[pri:0, instance:AppTest@4983159f]" name="testSickPetHealthCheck" class="AppTest"/>
+      </group> <!-- negative -->
+      <group name="domain">
+        <method signature="AppTest.testAdopterAggregation()[pri:0, instance:AppTest@4983159f]" name="testAdopterAggregation" class="AppTest"/>
+        <method signature="AppTest.testDogBreed()[pri:0, instance:AppTest@4983159f]" name="testDogBreed" class="AppTest"/>
+        <method signature="AppTest.testMedicalPassportId()[pri:0, instance:AppTest@4983159f]" name="testMedicalPassportId" class="AppTest"/>
+        <method signature="AppTest.testMultiplePetCreation(java.lang.String,java.lang.String)[pri:0, instance:AppTest@4983159f]" name="testMultiplePetCreation" class="AppTest"/>
+      </group> <!-- domain -->
+      <group name="smoke">
+        <method signature="AppTest.testPetCreation()[pri:0, instance:AppTest@4983159f]" name="testPetCreation" class="AppTest"/>
+        <method signature="AppTest.testPetEquality()[pri:0, instance:AppTest@4983159f]" name="testPetEquality" class="AppTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-04-09T02:06:39 EEST" name="ShelterTests" finished-at="2026-04-09T02:06:39 EEST" duration-ms="101">
+      <class name="AppTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAdopterAggregation()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testAdopterAggregation" finished-at="2026-04-09T02:06:39 EEST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdopterAggregation -->
+        <test-method signature="testDogBreed()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testDogBreed" finished-at="2026-04-09T02:06:39 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDogBreed -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMedicalPassportId()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testMedicalPassportId" finished-at="2026-04-09T02:06:39 EEST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMedicalPassportId -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultiplePetCreation(java.lang.String,java.lang.String)[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testMultiplePetCreation" data-provider="petNamesProvider" finished-at="2026-04-09T02:06:39 EEST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Шарік]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P-102]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplePetCreation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultiplePetCreation(java.lang.String,java.lang.String)[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testMultiplePetCreation" data-provider="petNamesProvider" finished-at="2026-04-09T02:06:39 EEST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Мурка]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P-103]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplePetCreation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMultiplePetCreation(java.lang.String,java.lang.String)[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testMultiplePetCreation" data-provider="petNamesProvider" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Бобик]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P-104]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiplePetCreation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPetCreation()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testPetCreation" finished-at="2026-04-09T02:06:39 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPetCreation -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPetEquality()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testPetEquality" finished-at="2026-04-09T02:06:39 EEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPetEquality -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSickPetHealthCheck()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="testSickPetHealthCheck" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSickPetHealthCheck -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AppTest@4983159f]" started-at="2026-04-09T02:06:39 EEST" name="setUp" finished-at="2026-04-09T02:06:39 EEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- AppTest -->
+    </test> <!-- ShelterTests -->
+  </suite> <!-- AnimalShelterSuite -->
+</testng-results>
